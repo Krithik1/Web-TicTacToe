@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+.container {
+    background-color: rgb(69, 248, 188);
+    margin: 50px;
+    padding: 50px;
+    border-radius: 50px;
+}
+
+.title {
+    text-align: center;
+}
+
+.status-action {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+
+.reset {
+    cursor: pointer;
+}
+
+.reset:hover {
+    color: white;
+}
+
+.grid {
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 15px;
+    background-color: rgb(25, 187, 133);
+}
+
+.block {
+    background: rgb(69, 248, 188);
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.x::after {
+    content: "X";
+    font-size: 150px;
+}
+
+.o::after {
+    content: "O";
+    font-size: 150px;
+}
